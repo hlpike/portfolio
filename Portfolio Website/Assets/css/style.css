@@ -1,0 +1,184 @@
+/* Compensate for fixed-navbar: */
+body {
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+
+    background-image: url(../media/starfield.png);
+    color: rgb(230, 230, 230);
+}
+#footer {
+    background-color: black;
+}
+.highlight {
+    background-color: black;
+}
+/* ~~ Home Page Settings ~~ */
+#banner {
+    background-image: url('../media/Music/lethallin_banner.png');
+    background-position: bottom;
+    color: white;
+}
+
+/* Image Hover Settings */
+.content {
+  position: relative;
+}
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+.content-image{
+  width: 100%;
+}
+.content-details {
+  position: absolute;
+  text-align: center;
+  color: white;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+}
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.fadeIn-top{
+  top: 20%;
+}
+
+/*Image Column Settings */
+.img-col {
+    padding: 3%;
+}
+
+/* About Section settings */
+.about-section {
+    padding: 8%;
+}
+.about-img img {
+    width: 100%;
+}
+
+/* ~~ Individual Piece Page Settings ~~ */
+.about-piece {
+    padding: 5%;
+    background-color: rgb(20, 20, 20);
+}
+.text-section {
+    vertical-align: middle;
+    padding: 1% 5%;
+}
+/* Carousel settings */
+.carousel {
+    max-height: 500px;
+}
+
+.item {
+    object-fit: contain;
+}
+.item img {
+    max-height: 500px;
+    width: auto;
+    margin: 0 auto;
+}
+.gallery-button .left span {
+    margin-left: 100%;
+}
+.gallery-button .right span {
+    margin-right: 100%;
+}
+
+/* Gallery settings */
+.gallery-button {
+    background-color: blue;
+    height: 200px;
+    padding: 0;
+}
+.video-section {
+    padding: 0;
+}
+.video {
+    padding: 0;
+}
+#rubin {
+    background-image: url('../media/background.jpg');
+}
+#posters {
+    background-image: url('../media/eurydice%20thumbnail.png');
+}
+#sst {
+    background-image: url('../media/microplastic%20mini-thumbnail.png');
+    background-size: auto;
+}
+#music {
+    background-image: url('../media/final%20wolf%20moon.png');
+    background-position: right bottom;
+}
+#challenges {
+    background-image: url('../media/designchallenge1%20thumbnail.png');
+    background-position: top;
+}
+#graphics {
+    background-image: url('../media/motion_graphics_thumbnail.png');
+}
+/* Button settings */
+
+
+/* Media Responsive Settings; affects screen when bigger */
+@media only screen and (min-width: 768px) {
+    .about-section {
+        padding: 0% 8%;
+    }
+    .about-img {
+        padding: 6%;
+    }
+    .img-col {
+        padding: 2% 1%;
+    }
+    
+    /* Fixed column settings */
+    .table-row {
+        display: table;
+        table-layout: fixed;
+    }
+    .table-row [class^="col-"] {
+        display: table-cell;
+        float: none;
+    }
+    .about-text {
+        vertical-align: middle;
+        text-align: left;
+    }
+    .about-piece {
+        padding: 0%;
+    }
+    .text-section {
+        padding: 2%;
+    }
+    .video-section {
+        padding: 0 20%;
+    }
+}
