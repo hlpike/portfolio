@@ -11,8 +11,11 @@
         <!--Now UI Stylesheet -->
         <link rel="stylesheet" href="Assets/css/now-ui-kit.css">
                 
-        <!-- Personal Sytlesheet -->
+        <!-- Personal Stylesheet -->
         <link rel="stylesheet" href="Assets/css/style.css">
+        
+        <!-- Adobe Fonts Stylesheet -->
+        <link rel="stylesheet" href="https://use.typekit.net/ojv3zfn.css">
         
         <!-- Bootstrap Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -42,11 +45,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="#">Hayley Pike</a>
+                    <a class="navbar-brand" href="#"><img id="nav-icon" class="d-inline-block align-top" src="Assets/media/nav-icon.png"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#portfolio">Portfolio</a></li>
+                        <li class="active">
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
                         <li><a href="#about">About</a></li>
                     </ul>
                 </div>
@@ -55,25 +60,86 @@
         
         <!-- Banner -->
         <div class="jumbotron" id="banner">
-            <div class="container text-center">
-                <h1>Hayley Pike</h1>
-                <p>Artist, programmer, storyteller</p>
-                <br>
+            <div class="gradient">
+                <div class="container text-left">
+                    <h1>Hayley Pike</h1>
+                    <p id="portfolio">Designer, programmer, storyteller</p>
+                    <br>
+                </div>
             </div>
         </div>
         
         <!-- First row of pictures -->
         <div class="container-fluid bg-3 text-center">    
-            <h3 id="portfolio">Portfolio</h3>
+            <h3>Portfolio</h3>
             <div class="row">
                 <div class="col-sm-6 img-col">
                     <div class="content">
-                        <a href="portfolio_challenges.html">
+                        <a href="portfolio_modeling.html">
                             <div class="content-overlay"></div>
-                            <img src="Assets/media/modeling_homepage.png" style="width:100%" alt="Image">
+                            <img src="Assets/media/modeling-thumbnail.jpeg" style="width:100%" alt="Image">
                             <div class="content-details fadeIn-top">
-                                <h3>3D Modeling/Worldbuilding Final</h3>
-                                <p>Final Project, IML 354: Intro to 3D-Modeling </p>
+                                <h3>A Quiet Melody</h3>
+                                <h4>3D Modeling Final Project</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            <div class="col-sm-6 img-col"> 
+                    <div class="content">
+                        <a href="portfolio_designfiction.html">
+                            <div class="content-overlay"></div>
+                            <img src="Assets/media/blue-uncertain-thumbnail.png" style="width:100%" alt="Image">
+                            <div class="content-details fadeIn-top">
+                                <h3>Blue Uncertain</h3>
+                                <h4>Design Fiction Pitch Deck</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>    
+            </div>
+        </div><br>
+        <!-- Second row of pictures -->
+        <div class="container-fluid bg-3 text-center">
+            <div class="row">
+                <div class="col-sm-6 img-col"> 
+                    <div class="content">
+                        <a href="portfolio_sst.html">
+                            <div class="content-overlay"></div>
+                            <img src="Assets/media/macroplastic%20shot%20copy.png" style="width:100%" alt="Image">
+                            <div class="content-details fadeIn-top">
+                                <h3>Micro/Macroplastic in the Pacific Ocean</h3>
+                                <h4>Systems, Space, and Time Project</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 img-col">
+                    <div class="content">
+                        <a href="portfolio_puzzungeon.html">
+                            <div class="content-overlay"></div>
+                            <img src="Assets/media/puzzungeon-thumbnail.png"
+                                     style="width: 100%" alt="Image">
+                            <div class="content-details fadeIn-top">
+                                <h3>Puzzungeon</h3>
+                                <h4>Co-op Jigsaw Arcade Game</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Third row of pictures -->
+        <div class="container-fluid bg-3 text-center">
+            <div class="row">
+                <div class="col-sm-6 img-col"> 
+                    <div class="content">
+                        <a href="portfolio_posters.html">
+                            <div class="content-overlay"></div>
+                            <img src="Assets/media/eurydice%20thumbnail.png" style="width:100%" alt="Image">
+                            <div class="content-details fadeIn-top">
+                                <h3>Theatrical/Concert Posters</h3>
+                                <h4>University Prep Theater Department</h4>
                             </div>
                         </a>
                     </div>
@@ -85,65 +151,7 @@
                             <img src="Assets/media/rubin_homepage.png" style="width:100%" alt="Image">
                             <div class="content-details fadeIn-top">
                                 <h3>Rubin Museum Site Redesign</h3>
-                                <p>Final Project, IML 300: Reading and Writing the Web</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div><br>
-        <!-- Second row of pictures -->
-        <div class="container-fluid bg-3 text-center">
-            <div class="col-sm-6 img-col"> 
-                    <div class="content">
-                        <a href="portfolio_posters.html">
-                            <div class="content-overlay"></div>
-                            <img src="Assets/media/eurydice%20thumbnail.png" style="width:100%" alt="Image">
-                            <div class="content-details fadeIn-top">
-                                <h3>Theatrical/Concert Posters</h3>
-                                <p>University Prep Theater Department</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            <div class="row">
-                <div class="col-sm-6 img-col"> 
-                    <div class="content">
-                        <a href="portfolio_sst.html">
-                            <div class="content-overlay"></div>
-                            <img src="Assets/media/macroplastic%20shot%20copy.png" style="width:100%" alt="Image">
-                            <div class="content-details fadeIn-top">
-                                <h3>Micro/Macroplastic in the Pacific Ocean</h3>
-                                <p>Systems, Space, and Time Project</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Third row of pictures -->
-        <div class="container-fluid bg-3 text-center">
-            <div class="row">
-                <div class="col-sm-6 img-col">
-                    <div class="content">
-                        <a href="portfolio_music.html">
-                            <div class="content-overlay"></div>
-                            <img src="Assets/media/final%20wolf%20moon.png" style="width:100%" alt="Image">
-                            <div class="content-details fadeIn-top">
-                                <h3>The Mind of Hayley Pike, Through Songwriting</h3>
-                                <p>Final Project, IML 288: Critical Thinking and Procedural Media</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6 img-col"> 
-                    <div class="content">
-                        <a href="portfolio_graphics.html">
-                            <div class="content-overlay"></div>
-                            <img src="Assets/media/motion_graphics_thumbnail.png" style="width:100%" alt="Image">
-                            <div class="content-details fadeIn-top">
-                                <h3>Motion Graphics: D&amp;D and Empaphetic Storytelling</h3>
-                                <p>Final Project, IML 230: Fundamentals of Media Design</p>
+                                <h4>Final Project, Intro to Website Design</h4>
                             </div>
                         </a>
                     </div>
@@ -162,19 +170,13 @@
                 </div>
                 <div class="col-sm-6 about-text">
                     <p>
-                        <span class="highlight">
-                        My passion is smashing art and technology together to see what happens. I'm currently a sophomore at the University of Southern California in the Media Arts + Practice program with a minor in Computer Science, interested in user experience design, VR/AR programming, and software development.
-                        </span>
+                        My passion is smashing art and technology together to see what happens. I'm currently a junior at the University of Southern California in the Media Arts + Practice program with a minor in Computer Science, interested in user experience design, VR/AR programming, and software development.
                     </p>
                     <p>
-                        <span class="highlight">
-                        I'm a longtime theater nerd, musician, painter, and video gamer, and I get entirely too enthused about scheduling board game nights.
-                        </span>
+                        I'm a longtime theater nerd, musician, and painter, and I get entirely too enthused about scheduling board game nights.
                     </p>
                     <p>
-                        <span class="highlight">
                         Feel free to contact me if you're interested in hearing more about my program, and click the resume link above to hear more about my skills.
-                        </span>
                     </p>
                     <br>
                     <p>

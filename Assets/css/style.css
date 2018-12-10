@@ -3,9 +3,20 @@ body {
     padding-top: 50px;
     padding-left: 0;
     padding-right: 0;
-
-    background-image: url(../media/starfield.png);
-    color: rgb(230, 230, 230);
+    background-color: rgb(16, 18, 40);
+    color: white;
+    text-decoration-color: none;
+}
+h1 {
+    font-family:"Chiavettieri", "Montserrat";
+    font-weight: bold;
+}
+h3 { 
+    font-family: "Chiavettieri", "Montserrat";
+    color: rgb(93, 191, 198);
+}
+p {
+    font-weight: normal;
 }
 #footer {
     background-color: black;
@@ -13,12 +24,32 @@ body {
 .highlight {
     background-color: black;
 }
-/* ~~ Home Page Settings ~~ */
-#banner {
-    background-image: url('../media/Music/lethallin_banner.png');
-    background-position: bottom;
-    color: white;
+#nav-icon {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+/* ~~ Banner Settings ~~ */
+#banner {
+    background: rgb(64, 84, 178);
+    background-image: linear-gradient(rgb(255, 0, 0, 0), rgb(64, 84, 178, 0.8)), url('../media/boathouse-background.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, bottom;
+    color: #5dbfc6;
+}
+.jumbotron .container h1 {
+    margin-bottom: 10px;
+}
+.jumbotron {
+    padding-top: 25%;
+    padding-bottom: 2%;
+}
+.jumbotron p {
+    font-weight: normal;
+}
+
+/* Portfolio Subsection Settings */
 
 /* Image Hover Settings */
 .content {
@@ -70,13 +101,18 @@ body {
 }
 
 /*Image Column Settings */
+.row {
+    padding: 0;
+}
 .img-col {
-    padding: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 /* About Section settings */
 .about-section {
     padding: 8%;
+    margin-bottom: 5%;
 }
 .about-img img {
     width: 100%;
@@ -145,7 +181,13 @@ body {
     background-image: url('../media/motion_graphics_thumbnail.png');
 }
 #modeling {
-    background-image: url('../media/modeling-thumbnail.png');
+    background-image: url('../media/modeling-thumbnail.jpeg');
+}
+#puzzungeon {
+    background-image: url('../media/puzzungeon-thumbnail.png');
+}
+#design-fiction{
+    background-image: url('../media/blue-uncertain-thumbnail.png');
 }
 /* Button settings */
 
@@ -161,7 +203,6 @@ body {
     .img-col {
         padding: 2% 1%;
     }
-    
     /* Fixed column settings */
     .table-row {
         display: table;
